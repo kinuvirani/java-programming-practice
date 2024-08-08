@@ -19,7 +19,7 @@ public class CheckPalindrome {
         System.out.print("Enter a string: ");
         String str = scanner.nextLine();
 
-        if (str.length() == 0) {
+        if (str.isEmpty()) {
             return;
         }
         if (str.length() < 3 && str.length() > 0) {

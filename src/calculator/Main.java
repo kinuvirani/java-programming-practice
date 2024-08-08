@@ -14,11 +14,12 @@ public class Main {
             System.out.println("Enter a calculator operation you want to perform in this format(10+20): ");
             operation = scanner.nextLine();
 
-            if (operation.matches("\\d+[+\\-*/]\\d+$")) {
-                String[] numbers = operation.split("[+-/*]");
+            if (operation.matches("^\\d+(\\.\\d+)?[+\\-*/]\\d+(\\.\\d+)?$")) {
+                String[] numbers = operation.split("[+\\-*/]");
                 char operator = operation.charAt(numbers[0].length());
                 double number1 = Double.parseDouble(numbers[0]);
                 double number2 = Double.parseDouble(numbers[1]);
+                System.out.println("="+ numbers[0] + " = " + numbers[1]);
 
                 switch (operator) {
                     case '+':

@@ -1,10 +1,11 @@
 
 public class Problem4 {
     public static void main(String[] args) {
-        int i = 1;
-        while (i <= 50) {
+        int i = 1, count = 0;
+        while (count < 50) {
             if (i % 2 != 0) {
-                System.out.println("Odd number is " + i);
+                count += 1;
+                System.out.print(i + " ");
             }
             i += 1;
         }

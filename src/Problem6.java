@@ -1,8 +1,9 @@
 public class Problem6 {
     public static void main(String[] args) {
-        int i = 1, sum = 0;
-        while (i <= 50) {
+        int i = 1, sum = 0, count = 0;
+        while (count < 50) {
             if (i % 2 == 0) {
+                count += 1;
                 sum += i;
             }
             i += 1;

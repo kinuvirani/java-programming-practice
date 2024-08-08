@@ -58,3 +58,5 @@ public class Calculator {
         System.out.println("Your result is for " + num1 + " " + operation + " " + num2 + " = " + result);
     }
 }
+
+//Note: if I want to return from divide by zero exception;

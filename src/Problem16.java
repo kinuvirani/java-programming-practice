@@ -7,10 +7,18 @@ public class Problem16 {
         int a = scanner.nextInt();
         System.out.println("Enter b: ");
         int b = scanner.nextInt();
-        while (b > 0) {
-            a += 1;
-            b -= 1;
+        if (b > 0) {
+            while (b > 0) {
+                a += 1;
+                b -= 1;
+            }
+        } else if (b < 0) {
+            while (b < 0) {
+                b += 1;
+                a -= 1;
+            }
         }
+
         System.out.println("Sum of two numbers is " + a);
     }
 }
